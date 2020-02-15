@@ -1,11 +1,25 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+import Header from './components/Header/index';
+
+import Home from './pages/Home/index';
+import Courses from './pages/Courses/index';
+import Investiments from './pages/Investiments/index';
+import Login from './pages/Login/index';
+
+
 function Routes() {
   return (
     <BrowserRouter>
+      <Header />
       <Switch>
-        <Route path="/" exact component={() => (<h1>Teste</h1>)}/>
+        <main className="container">
+          <Route path="/" exact component={Home}/>
+          <Route path="/courses" component={Courses}/>
+          <Route path="/investiments" component={Investiments}/>
+          <Route path="/login" component={Login}/>
+        </main>
       </Switch>
     </BrowserRouter>
   )
