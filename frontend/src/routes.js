@@ -14,14 +14,14 @@ function Routes() {
   return (
     <BrowserRouter>
       <Header />
-      <Switch>
-        <main className="container">
+      <main className='container'>
+        <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/courses" component={Courses}/>
           <Route path="/investiments" component={Investiments}/>
           <Route path="/login" component={Login}/>
-        </main>
-      </Switch>
+        </Switch>
+      </main>
       <Footer />
     </BrowserRouter>
   )
