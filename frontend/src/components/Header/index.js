@@ -54,7 +54,7 @@ function Header() {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <Link class="btn btn-success" tag={Link} to="/login" >Entrar</Link>
+          <Link className="btn btn-success" tag={Link} to="/login" >Entrar</Link>
         </Collapse>
       </Navbar>
     </div>
