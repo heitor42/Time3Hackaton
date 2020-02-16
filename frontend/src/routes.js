@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Header from './components/Header/index';
+import Footer from './components/Footer/index';
 
 import Home from './pages/Home/index';
 import Courses from './pages/Courses/index';
@@ -21,6 +22,7 @@ function Routes() {
           <Route path="/login" component={Login}/>
         </main>
       </Switch>
+      <Footer />
     </BrowserRouter>
   )
 }
