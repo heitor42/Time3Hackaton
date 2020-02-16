@@ -8,6 +8,7 @@ import Home from './pages/Home/index';
 import Courses from './pages/Courses/index';
 import Investiments from './pages/Investiments/index';
 import Login from './pages/Login/index';
+import SignUp from './pages/SignUp/index';
 
 
 function Routes() {
@@ -20,6 +21,7 @@ function Routes() {
           <Route path="/courses" component={Courses}/>
           <Route path="/investiments" component={Investiments}/>
           <Route path="/login" component={Login}/>
+          <Route path="/signup" component={SignUp}/>
         </Switch>
       </main>
       <Footer />
