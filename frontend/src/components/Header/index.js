@@ -24,8 +24,8 @@ function Header() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar color="dark" dark expand="md">
+    <>
+      <Navbar className="header" color="dark" dark expand="md">
         <NavbarBrand tag={Link} to="/"><img className="logo" src={logo} alt="Logo da XP investimentos" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -57,7 +57,7 @@ function Header() {
           <Link className="btn btn-success" tag={Link} to="/login" >Entrar</Link>
         </Collapse>
       </Navbar>
-    </div>
+    </>
   );
 }
 
