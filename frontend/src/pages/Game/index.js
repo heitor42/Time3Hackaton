@@ -9,7 +9,6 @@ import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 
-
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
