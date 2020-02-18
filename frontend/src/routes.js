@@ -9,6 +9,7 @@ import Courses from './pages/Courses/index';
 import Investiments from './pages/Investiments/index';
 import Login from './pages/Login/index';
 import SignUp from './pages/SignUp/index';
+import Game from './pages/Game/index';
 
 
 function Routes() {
@@ -22,6 +23,7 @@ function Routes() {
           <Route path="/investiments" component={Investiments}/>
           <Route path="/login" component={Login}/>
           <Route path="/signup" component={SignUp}/>
+          <Route path="/game" component={Game}/>
         </Switch>
       </main>
       <Footer />
